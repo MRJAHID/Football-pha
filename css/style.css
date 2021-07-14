@@ -1,0 +1,398 @@
+/* ==================================
+             Global Css
+ ================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+ul,
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* ==================================
+             Header Css
+ ================================== */
+
+.header {
+    background-color: #2d25a0;
+    width: 1440px;
+    height: 677px;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.header__wrapper:hover .header__img img {
+    transform: rotate(360deg);
+}
+.header__img {
+    width: 556px;
+    height: 438px;
+}
+.header__img img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+.header__text {
+    margin-right: 102px;
+    width: 485px;
+}
+.header__text h1 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 27px;
+}
+.header__text button {
+    width: 168px;
+    height: 44px;
+    color: #fff;
+    background-color: #e02c6d;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: medium;
+    cursor: pointer;
+}
+
+.header__text button i {
+    padding-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.header__text button:hover i {
+    margin-left: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .header {
+        width: 100vw;
+        height: auto;
+    }
+    .header__wrapper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .header__img {
+        width: 100%;
+        height: auto;
+        padding: 0 16px;
+        margin-bottom: 61px;
+    }
+    .header__text {
+        margin-top: 50px;
+        width: 440px;
+        margin-left: 35px;
+    }
+    .header__text h1 {
+        font-size: 46px;
+    }
+    .header__text button {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 600px) {
+    .header__text {
+        width: 278px;
+        margin-left: 16px;
+    }
+    .header__text h1 {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+    .header__text button {
+        margin-bottom: 50px;
+    }
+}
+
+/* ==================================
+        Players Section Css
+ ================================== */
+
+.players {
+    background-color: #fff;
+}
+.players__wrapper {
+    padding-top: 70px;
+    width: 1050px;
+    margin: 0 auto;
+}
+.players__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 45px;
+}
+.players__item {
+    width: 330px;
+    height: 456px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.players__item img {
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+}
+.players__item .players__name {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    color: #18191f;
+}
+.players__item p {
+    font-weight: normal;
+    font-size: 16px;
+    color: #6c6c6c;
+    line-height: 26px;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .players__wrapper {
+        padding-top: 47px;
+        width: 100vw;
+    }
+    .players__items {
+        margin: 16px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .players__item {
+        width: 100%;
+    }
+    .players__item img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .players__wrapper {
+        padding-top: 47px;
+        width: 100vw;
+    }
+    .players__items {
+        margin: 16px;
+        grid-template-columns: 1fr;
+    }
+    .players__item {
+        width: 100%;
+    }
+    .players__item img {
+        width: 100%;
+    }
+}
+
+/* ==================================
+        Footer Section Css
+ ================================== */
+.footer {
+    margin-bottom: 63px;
+    margin-top: 158px;
+}
+.footer__wrapper {
+    width: 484px;
+    margin: 0 auto;
+}
+.footer__wrapper img {
+    width: 100%;
+}
+.footer__copyright {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    text-align: center;
+}
+.footer__wrapper ul {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.footer__wrapper ul li:not(:last-child) {
+    margin-right: 14px;
+}
+.footer__wrapper ul li a i {
+    width: 32px;
+    height: 32px;
+    color: #979bab;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .footer {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 600px) {
+    .footer {
+        margin-bottom: 63px;
+        margin-top: 55px;
+    }
+    .footer__wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer__wrapper img {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 35px;
+    }
+}
+
+/* ==================================
+        VIDEO Section Css
+ ================================== */
+.video {
+    margin-top: 70px;
+}
+.video__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.video__item {
+    width: 32%;
+    cursor: pointer;
+    position: relative;
+}
+.video__item span {
+    background: red;
+    padding: 4px 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+}
+.video__item video {
+    width: 100%;
+}
+.video__item h3 {
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+    font-size: 16px;
+    color: white;
+}
+/* Responsive */
+@media (max-width: 1023px) {
+    .video__wrapper {
+        flex-direction: column;
+    }
+    .video__item {
+        width: 100vw;
+        padding: 0 15px;
+        margin: 15px 0;
+    }
+}
+@media (max-width: 600px) {
+    .video__wrapper {
+        flex-direction: column;
+    }
+    .video__item {
+        width: 100vw;
+        padding: 15px;
+    }
+}
+
+/* ==================================
+        NEWS Section Css
+ ================================== */
+.news {
+    margin-top: 70px;
+}
+
+.news__wrapper {
+    width: 1050px;
+    margin: 0 auto;
+}
+.news__items {
+    display: flex;
+    justify-content: space-between;
+}
+.section__title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.news__items picture {
+    padding-right: 20px;
+}
+.news__items picture img {
+    height: 300px;
+    width: 620px;
+    object-fit: cover;
+}
+.news__info {
+    margin-left: 10px;
+    padding: 40px 15px;
+    width: 100%;
+    border: 10px solid #345ab3;
+}
+
+.news__info span {
+    background: rgb(29, 20, 20);
+    padding: 4px 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+.news__info h3 {
+    margin: 20px 0;
+    font-weight: 600;
+    color: #18191f;
+}
+
+.news__info p {
+    font-weight: 400;
+    margin: 20px 0;
+    color: #18191fa6;
+}
+
+/* Responsive */
+
+@media (max-width: 1023px) {
+    .news__items {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .section__title {
+        padding-left: 20px;
+    }
+    .news__items picture img {
+        height: auto;
+        width: 100vw;
+        object-fit: cover;
+    }
+    .news__info {
+        width: 100vw;
+        margin: 15px 5px;
+        border: none;
+    }
+}
